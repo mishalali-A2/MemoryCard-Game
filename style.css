@@ -1,0 +1,75 @@
+body{
+  background-color: rgba(210, 216, 247, 0.877);
+}
+.hero-section{
+  margin-top: 30px;
+  font-family: 'Lucida Sans';
+  font-size: xx-large;
+  color:rgb(8, 4, 92)
+}
+#mistake-cnt, #correct-cnt{
+  font-weight: 500;
+  font-weight: 300%;
+  color: rgba(8, 8, 146, 0.893);
+}
+.buttons{
+   background-color: rgba(127, 129, 255, 0.295);
+   border-radius: 30px;
+   border-style: solid;
+   border-color: rgb(10, 10, 135);
+   border-width: 5px 5px;
+   box-shadow: 0 20px 30px rgba(13, 9, 113, 0.9);
+}
+#refresh{
+  background-color: rgba(81, 94, 238, 0.731);
+  align-items: center;
+  color: #9ee6ca;
+  padding: 10px 25px;
+  width: 150px;
+  height: 90px;
+  font-size: 1.5rem;
+  box-shadow: 0 20px 30px rgba(13, 9, 113, 0.9);
+  margin-bottom: 40px;
+}
+#refresh p{
+  align-items: center;
+  color: #9ee6ca;
+  font-size: 1.4rem;
+}
+#board img {
+  width: 130px;
+  height: 128px;
+  cursor:grab;
+  user-select: none;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  #board {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  #refresh {
+    padding: 8px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  #refresh {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .lead {
+    font-size: 0.8rem;
+  }
+}
