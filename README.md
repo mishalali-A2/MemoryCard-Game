@@ -2,6 +2,7 @@
 
 A simple memory card matching game featuring Pokemon character cards. The objective is to find all matching pairs of cards with the fewest mistakes possible.
 
+To play this game visit: [https://mishalali-a2.github.io/MemoryCard-Game/]
 ## Features
 - 13 different Pokemon cards to match
 - Randomized card placement on each game
