@@ -9,7 +9,7 @@ let mistakes = 0;
 let correct=0;
 let game_start = false;
 let game_lock = false;
-const card_back = "imgs/back.png";
+const card_back = "/MemoryCard-Game/imgs/back.png";
 
 //fisher-yates algo-> shuffles arr w/i itself
 function shuffle_cards(arr) {
@@ -59,7 +59,7 @@ function reshuffling() {
   setTimeout(function() {
     $("#board img").each(function(idx) {
       const card_name = cards_set[idx].name;
-      $(this).attr("src", "imgs/" + card_name + ".png");
+      $(this).attr("src", "/MemoryCard-Game/imgs/" + card_name + ".png");
     });
   }, 100);
 
@@ -126,7 +126,7 @@ $(document).ready(function() {
     const idx = $(this).data("index");
     if (cards_set[idx].matched || this === card_A?.get(0)) return;
 
-    $(this).attr("src", "imgs/" + cards_set[idx].name + ".png");
+    $(this).attr("src", "/MemoryCard-Game/imgs/" + cards_set[idx].name + ".png");
 
     if (!card_A) {
       card_A = $(this);
